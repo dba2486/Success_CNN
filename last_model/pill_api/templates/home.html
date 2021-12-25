@@ -1,0 +1,30 @@
+<!--<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        This is my
+        <form action="{% url 'result' %}">
+        {% csrf_token %}
+            <input type="submit" name="" value="제출">
+
+        </form>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="{% url 'result' %}">
+    {% csrf_token %}
+    <input type = "file" name = "fileupload" accept = "image/*" />
+        <input type="submit" name="" value="제출">
+
+    </form>
+</body>
+</html>
